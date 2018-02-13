@@ -25,5 +25,6 @@ app.post('/', (req, res) => {
 });
 
 const port = process.env.PORT || 3000;
-app.listen(port);
-console.log("Node server running at port " + port);
+app.listen(port, () => {
+	console.log("Node server running at port " + port);
+});
